@@ -8,6 +8,7 @@ while 1:
     line = fpin.readline()
     if not line:
         break
-    words += line.split()
+    clearline = line.translate(str.maketrans('','',string.punctuation))
+    words += clearline.split()
 
 print(words)

@@ -19,4 +19,6 @@ count = dict()
 for word_count in rmdupli:
     count[word_count] = words.count(word_count)
 
-print(count)
+word_sorted = sorted(count.items(), key = lambda item: item[1], reverse = True)
+print(word_sorted)
+

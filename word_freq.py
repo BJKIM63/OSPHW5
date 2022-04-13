@@ -11,4 +11,7 @@ while 1:
     clearline = line.translate(str.maketrans('','',string.punctuation))
     words += clearline.split()
 
-print(words)
+rmdupli = set(words)
+rmdupli = list(rmdupli)
+
+print(rmdupli)

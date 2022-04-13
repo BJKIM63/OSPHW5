@@ -22,4 +22,4 @@ for word_count in rmdupli:
 word_sorted = sorted(count.items(), key = lambda item: item[1], reverse = True)
 
 for i in range(5):
-    print("%10s %-5d" %(word_sorted[i][0], word_sorted[i][1]))
+    print("%-10s %5d" %(word_sorted[i][0], word_sorted[i][1]))

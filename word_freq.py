@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import string
-fpin = open("article.txt", "r")
+import sys
+args = sys.argv[1:]
+fpin = open(args[0], "r")
 
 words = list()
 
@@ -21,5 +23,5 @@ for word_count in rmdupli:
 
 word_sorted = sorted(count.items(), key = lambda item: item[1], reverse = True)
 
-for i in range(5):
+for i in range(args[1]):
     print("%-10s %5d" %(word_sorted[i][0], word_sorted[i][1]))

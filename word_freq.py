@@ -14,4 +14,9 @@ while 1:
 rmdupli = set(words)
 rmdupli = list(rmdupli)
 
-print(rmdupli)
+count = dict()
+
+for word_count in rmdupli:
+    count[word_count] = words.count(word_count)
+
+print(count)
